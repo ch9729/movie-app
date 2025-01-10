@@ -96,4 +96,4 @@ useEffect(() => {
 
 ---
 
-<video src="./example.mp4">
+![Example GIF](./public/example.gif)
