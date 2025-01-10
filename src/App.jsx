@@ -14,8 +14,11 @@ function App() {
   console.log("API Key:", import.meta.env.VITE_OMDB_API_KEY);
   //서버에서 영화들 데이터를 가져옴
   const getMovieRequest = async (search) => {
-    const apiKey = import.meta.env.VITE_OMDB_API_KEY;
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${search}`;
+    // const apiKey = import.meta.env.VITE_OMDB_API_KEY;
+    // const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${search}`;
+    const url = `https://www.omdbapi.com/?apikey=${
+      import.meta.env.VITE_OMDB_API_KEY
+    }&s=${search}`;
     const response = await fetch(url); // omdb 서버에서 데이터를 제이슨으로 받는다.
     const jsonData = await response.json(); // JSON문자열을 자바스크립트 객체로 변환
     console.log(jsonData);
