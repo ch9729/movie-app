@@ -10,17 +10,9 @@ function App() {
   const [searchValue, setSearchValue] = useState("");
   const [movies, setMovies] = useState([]);
   const [favorites, setFavorites] = useState([]); // 선호작 영화
-  //서버에서 영화들 데이터를 가져옴
-  // async function getMovieRequest(searchValue) {
-  //   // await를 사용하기 위해선 함수 앞에 async를 붙힌다.
-  //   const url = `http://www.omdbapi.com/?apikey=46bb1344&s=${searchValue}`;
-  //   const response = await fetch(url); // omdb 서버에서 데이터를 제이슨으로 받는다.
-  //   const jsonData = await response.json(); // JSON문자열을 자바스크립트 객체로 변환
-  //   console.log(jsonData);
-  //   setMovies(jsonData.Search);
-  // }
+
   console.log("API Key:", import.meta.env.VITE_OMDB_API_KEY);
-  //서버에서 영화들 데이터를 가져옴 (14~20번 행과 동일)
+  //서버에서 영화들 데이터를 가져옴
   const getMovieRequest = async (search) => {
     const apiKey = import.meta.env.VITE_OMDB_API_KEY;
     const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${search}`;
