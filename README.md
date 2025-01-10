@@ -2,6 +2,8 @@
 
 - OMDB API를 사용하여 영화를 검색하고, 선호작을 추가 및 삭제 하는 간단한 React 애플리케이션
 
+## [배포 사이트](https://movie-app-ch9729.netlify.app/)
+
 ## 주요 기능
 
 1. 영화 검색
@@ -92,6 +94,6 @@ useEffect(() => {
 
 - "Deploy site" 클릭하여 배포를 시작
 
-## [해당 사이트](https://movie-app-ch9729.netlify.app/) 가기
+---
 
 <video src="./public/example.mp4">
