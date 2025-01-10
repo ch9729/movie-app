@@ -96,4 +96,4 @@ useEffect(() => {
 
 ---
 
-<video src="./public/example.mp4">
+<video src="./example.mp4">
